@@ -1,0 +1,16 @@
+.header-center,
+.centerized-input {
+    text-align: center;
+}
+
+.backgroun-login {
+    background-color: rgb(180, 255, 230);
+}
+
+.background-deposite {
+    background-color: #7f99ff;
+}
+
+.background-withdraw {
+    background-color: #83fafa;
+}
