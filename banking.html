@@ -22,20 +22,20 @@
     <main>
         <section class="container mt-5">
             <div class="container px-4 text-center">
-                <div class="row gx-5">
-                    <div class="col-4">
+                <div class="row g-5">
+                    <div class="col-md-4 col-sm-12">
                         <div class="p-3 border bg-info rounded p-4 text-white">
                             <h3>Deposite</h3>
-                            <h2>$00</h2>
+                            <h2>$<span id="deposite-total">00</span></h2>
                         </div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-md-4 col-sm-12">
                         <div class="p-3 border bg-secondary rounded p-4 text-white">
                             <h3>Blance</h3>
-                            <h2>$810</h2>
+                            <h2>$<span id="blance-total">810</span></h2>
                         </div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-md-4 col-12">
                         <div class="p-3 border bg-success rounded p-4 text-white">
                             <h3>Withdraw</h3>
                             <h2>$00</h2>
@@ -46,19 +46,21 @@
         </section>
         <section class="container mt-5">
             <div class="container overflow-hidden text-center">
-                <div class="row gx-5">
-                    <div class="col-6 ">
+                <div class="row g-5">
+                    <div class="col-md-6 col-sm-12">
                         <div class="border p-5 rounded background-deposite">
                             <h2>Withdraw</h2>
-                            <input type="text" class="d-block w-100 rounded" placeholder="Say Amount to Deposite">
-                            <button class="btn btn-primary mt-3">Deposite</button>
+                            <input type="text" id="deposite-amount" class="d-block mt-4 w-100 rounded"
+                                placeholder="Say Amount to Deposite">
+                            <button id="deposite-button"
+                                class="btn btn-primary text-white fw-semibold mt-3">Deposite</button>
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-md-6 col-sm-12">
                         <div class="p-5 rounded border background-withdraw">
                             <h2>Withdraw</h2>
-                            <input type="text" class="d-block w-100 rounded" placeholder="Say Amount to Withdraw">
-                            <button class="btn btn-warning mt-3">Withdraw</button>
+                            <input type="text" class="d-block mt-4 w-100 rounded" placeholder="Say Amount to Withdraw">
+                            <button class="btn btn-warning text-white fw-semibold mt-3">Withdraw</button>
                         </div>
                     </div>
                 </div>
