@@ -38,7 +38,7 @@
                     <div class="col-md-4 col-12">
                         <div class="p-3 border bg-success rounded p-4 text-white">
                             <h3>Withdraw</h3>
-                            <h2>$00</h2>
+                            <h2>$<span id="withdraw-total">00</span></h2>
                         </div>
                     </div>
                 </div>
@@ -59,8 +59,10 @@
                     <div class="col-md-6 col-sm-12">
                         <div class="p-5 rounded border background-withdraw">
                             <h2>Withdraw</h2>
-                            <input type="text" class="d-block mt-4 w-100 rounded" placeholder="Say Amount to Withdraw">
-                            <button class="btn btn-warning text-white fw-semibold mt-3">Withdraw</button>
+                            <input type="text" id="withdraw-amount" class="d-block mt-4 w-100 rounded"
+                                placeholder="Say Amount to Withdraw">
+                            <button id="withdraw-button"
+                                class="btn btn-warning text-white fw-semibold mt-3">Withdraw</button>
                         </div>
                     </div>
                 </div>

@@ -16,4 +16,26 @@ document.getElementById('deposite-button').addEventListener('click', function ()
     previousBalanceAmount.innerText = totalBlance;
 
     depositAmount.value = '';
+    return totalBlance;
+})
+
+
+document.getElementById('withdraw-button').addEventListener('click', function () {
+    const withdrawAmount = document.getElementById('withdraw-amount');
+    const newWithdrwString = withdrawAmount.value;
+    const newWithdraw = parseFloat(newWithdrwString);
+
+    const withdrawTotalAmount = document.getElementById('withdraw-total');
+    const prevWithdrawTotalmountString = withdrawTotalAmount.innerText;
+    const prevWithdrawTotalmount = parseFloat(prevWithdrawTotalmountString);
+    const totalWithdrawAmount = prevWithdrawTotalmount + newWithdraw;
+    withdrawTotalAmount.innerText = totalWithdrawAmount;
+
+    const totalBlanceAmount = document.getElementById("blance-total");
+    const prevTotalBlanceAmount = totalBlanceAmount.innerText;
+    const prevTotalBlance = parseFloat(prevTotalBlanceAmount);
+    const calcTotalBlance = prevTotalBlance - newWithdraw;
+    totalBlanceAmount.innerText = calcTotalBlance;
+
+    withdrawAmount.value = "";
 })

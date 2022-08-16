@@ -4,9 +4,9 @@ document.getElementById('login-button').addEventListener('click', function () {
 
     const userPassword = document.getElementById('exampleInputPassword1');
     const password = userPassword.value;
-
-    if (email === 'bou@jim.com' && password === 'Sabina') {
-        window.location.href = "banking.html"
+    console.log(email, password)
+    if (email == 'bou@jim.com' && password == 'Sabina') {
+        window.location.href = "bank.html"
     }
     else {
         alert('Baincod Vag sala. Hack Korbi')
